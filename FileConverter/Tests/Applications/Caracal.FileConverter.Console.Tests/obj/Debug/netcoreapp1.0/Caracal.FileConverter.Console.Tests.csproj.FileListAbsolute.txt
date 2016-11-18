@@ -1,0 +1,10 @@
+C:\Users\ettiene.m\Source\Repos\FileConverter\FileConverter\Tests\Applications\Caracal.FileConverter.Console.Tests\bin\Debug\netcoreapp1.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\ettiene.m\Source\Repos\FileConverter\FileConverter\Tests\Applications\Caracal.FileConverter.Console.Tests\bin\Debug\netcoreapp1.0\xunit.runner.utility.dotnet.dll
+C:\Users\ettiene.m\Source\Repos\FileConverter\FileConverter\Tests\Applications\Caracal.FileConverter.Console.Tests\bin\Debug\netcoreapp1.0\Caracal.FileConverter.Console.Tests.dll
+C:\Users\ettiene.m\Source\Repos\FileConverter\FileConverter\Tests\Applications\Caracal.FileConverter.Console.Tests\bin\Debug\netcoreapp1.0\Caracal.FileConverter.Console.Tests.pdb
+C:\Users\ettiene.m\Source\Repos\FileConverter\FileConverter\Tests\Applications\Caracal.FileConverter.Console.Tests\bin\Debug\netcoreapp1.0\Caracal.FileConverter.Console.dll
+C:\Users\ettiene.m\Source\Repos\FileConverter\FileConverter\Tests\Applications\Caracal.FileConverter.Console.Tests\bin\Debug\netcoreapp1.0\Caracal.FileConverter.Console.pdb
+C:\Users\ettiene.m\Source\Repos\FileConverter\FileConverter\Tests\Applications\Caracal.FileConverter.Console.Tests\obj\Debug\netcoreapp1.0\Caracal.FileConverter.Console.Tests.csprojResolveAssemblyReference.cache
+C:\Users\ettiene.m\Source\Repos\FileConverter\FileConverter\Tests\Applications\Caracal.FileConverter.Console.Tests\obj\Debug\netcoreapp1.0\Caracal.FileConverter.Console.Tests.AssemblyInfo.cs
+C:\Users\ettiene.m\Source\Repos\FileConverter\FileConverter\Tests\Applications\Caracal.FileConverter.Console.Tests\obj\Debug\netcoreapp1.0\Caracal.FileConverter.Console.Tests.dll
+C:\Users\ettiene.m\Source\Repos\FileConverter\FileConverter\Tests\Applications\Caracal.FileConverter.Console.Tests\obj\Debug\netcoreapp1.0\Caracal.FileConverter.Console.Tests.pdb

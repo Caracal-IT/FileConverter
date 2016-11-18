@@ -1,10 +1,62 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.25914.0
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{7D0027E0-072B-4837-AF39-0FF361F0F828}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{11F5CA8E-13E3-44BB-AD60-8CF51A638713}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Applications", "Applications", "{3A763F7D-FE69-424D-BFC3-9A17EEDF93BC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{7549888F-CF5A-4110-A3A7-FA74EAD984DF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Applications", "Applications", "{F2988D3D-39B1-4764-9F4E-E5B639AED98B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{09991163-8162-45BF-A01D-647887016356}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caracal.FileConverter.Console", "Source\Applications\Caracal.FileConverter.Console\Caracal.FileConverter.Console.csproj", "{EA94A9C8-9809-4263-8958-E508A4E427CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caracal.FileConverter.Console.Tests", "Tests\Applications\Caracal.FileConverter.Console.Tests\Caracal.FileConverter.Console.Tests.csproj", "{5BBF93A1-919A-4992-B803-25C31BAA8FC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caracal.FileConverter.Parser", "Source\Libraries\Caracal.FileConverter.Parser\Caracal.FileConverter.Parser.csproj", "{90992132-F8CB-4C0F-ACD1-4B561C307010}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caracal.FileConverter.Parser.Tests", "Tests\Libraries\Caracal.FileConverter.Parser.Tests\Caracal.FileConverter.Parser.Tests.csproj", "{B99FD8CC-AFEB-4886-BB7E-F3DBEF0C8B6C}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA94A9C8-9809-4263-8958-E508A4E427CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA94A9C8-9809-4263-8958-E508A4E427CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA94A9C8-9809-4263-8958-E508A4E427CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA94A9C8-9809-4263-8958-E508A4E427CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BBF93A1-919A-4992-B803-25C31BAA8FC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BBF93A1-919A-4992-B803-25C31BAA8FC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BBF93A1-919A-4992-B803-25C31BAA8FC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BBF93A1-919A-4992-B803-25C31BAA8FC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90992132-F8CB-4C0F-ACD1-4B561C307010}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90992132-F8CB-4C0F-ACD1-4B561C307010}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90992132-F8CB-4C0F-ACD1-4B561C307010}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90992132-F8CB-4C0F-ACD1-4B561C307010}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B99FD8CC-AFEB-4886-BB7E-F3DBEF0C8B6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B99FD8CC-AFEB-4886-BB7E-F3DBEF0C8B6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B99FD8CC-AFEB-4886-BB7E-F3DBEF0C8B6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B99FD8CC-AFEB-4886-BB7E-F3DBEF0C8B6C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3A763F7D-FE69-424D-BFC3-9A17EEDF93BC} = {7D0027E0-072B-4837-AF39-0FF361F0F828}
+		{7549888F-CF5A-4110-A3A7-FA74EAD984DF} = {7D0027E0-072B-4837-AF39-0FF361F0F828}
+		{F2988D3D-39B1-4764-9F4E-E5B639AED98B} = {11F5CA8E-13E3-44BB-AD60-8CF51A638713}
+		{09991163-8162-45BF-A01D-647887016356} = {11F5CA8E-13E3-44BB-AD60-8CF51A638713}
+		{EA94A9C8-9809-4263-8958-E508A4E427CD} = {3A763F7D-FE69-424D-BFC3-9A17EEDF93BC}
+		{5BBF93A1-919A-4992-B803-25C31BAA8FC5} = {F2988D3D-39B1-4764-9F4E-E5B639AED98B}
+		{90992132-F8CB-4C0F-ACD1-4B561C307010} = {7549888F-CF5A-4110-A3A7-FA74EAD984DF}
+		{B99FD8CC-AFEB-4886-BB7E-F3DBEF0C8B6C} = {09991163-8162-45BF-A01D-647887016356}
 	EndGlobalSection
 EndGlobal
