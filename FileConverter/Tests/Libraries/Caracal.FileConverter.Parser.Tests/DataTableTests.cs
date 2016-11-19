@@ -1,5 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 using Xunit;
 
 using static Xunit.Assert;
@@ -29,7 +31,28 @@ namespace Caracal.FileConverter.Parser.Tests {
             Equal("Row 2 - Col 2", rowCounts[1].Col);
             Equal(2, rowCounts[1].Count);
         }
-                
+
+        [Fact]
+        public void OrderByCol() {
+            table.Rows[1]["Header 2"] = "Row 2 - ACol 2";
+
+            var row = table.Rows
+                           .Select(r => r["Header 2"])
+                           .OrderBy(r => r, new PartialStringComparer())
+                           .First();
+
+            Equal("Row 2 - ACol 2", row);
+        }
+
+        class PartialStringComparer : IComparer<string> {
+            public int Compare(string x, string y) {
+                var a = x.Substring(x.IndexOf('-') + 1);
+                var b = y.Substring(y.IndexOf('-') + 1);
+
+                return a.CompareTo(b);
+            }
+        }
+        
         private void AddMockData() {
             AddHeaders();
             AddRows();
