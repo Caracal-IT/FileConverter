@@ -1,5 +1,4 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 using System.IO;
 
 namespace Caracal.FileConverter.Parser {
@@ -8,7 +7,7 @@ namespace Caracal.FileConverter.Parser {
         private StreamWriter writer;
         private IOrderedEnumerable<Customer> customers;
         
-        public CustomerSurnameParser(Stream input, Stream output) {
+        private CustomerSurnameParser(Stream input, Stream output) {
             reader = new StreamReader(input);
             writer = new StreamWriter(output) { NewLine = "\n" };            
         }
