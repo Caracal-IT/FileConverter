@@ -31,21 +31,10 @@ namespace Caracal.FileConverter.Parser {
         }
 
         private void WriteAddressesToOutputStream() {
-            foreach (var a in addresses)
-                WriteAddress(a);
-
+            addresses.ToList().ForEach(a => writer.WriteLine(a));            
             writer.Flush();
         }
-
-        private void WriteAddress(Address address) {
-            if (IsLastCustomer(address))
-                writer.Write(address);
-            else
-                writer.WriteLine(address);
-        }
-
-        private bool IsLastCustomer(Address address) => address.Equals(addresses.Last());
-
+               
         private struct Address {
             private string addressString;
 

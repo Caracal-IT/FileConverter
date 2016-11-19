@@ -29,21 +29,10 @@ namespace Caracal.FileConverter.Parser {
                              .ThenBy(r => r.LastName);
         }
 
-        private void WriteCustomersToOutputStream() {            
-            foreach (var c in customers) 
-                WriteCustomer(c);                
-            
+        private void WriteCustomersToOutputStream() {
+            customers.ToList().ForEach(c => writer.WriteLine(c));                 
             writer.Flush();
-        }
-
-        private void WriteCustomer(Customer customer) {            
-            if(IsLastCustomer(customer))            
-                writer.Write(customer);
-            else
-                writer.WriteLine(customer);
-        }
-
-        private bool IsLastCustomer(Customer customer) => customer.Equals(customers.Last());
+        }        
 
         private struct Customer {
             public string LastName { get; set; }

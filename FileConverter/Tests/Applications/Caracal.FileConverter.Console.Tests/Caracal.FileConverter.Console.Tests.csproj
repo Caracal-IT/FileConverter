@@ -28,6 +28,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\Source\Applications\Caracal.FileConverter.Console\Caracal.FileConverter.Console.csproj" />
+    <ProjectReference Include="..\..\..\Source\Libraries\Caracal.FileConverter.Parser\Caracal.FileConverter.Parser.csproj" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

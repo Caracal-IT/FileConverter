@@ -2,7 +2,7 @@
 using static System.Text.Encoding;
 using System.IO;
 
-namespace Caracal.FileConverter.Parser.Tests {
+namespace Caracal.FileConverter.Parser.Tests.TestDoubles {
 
     public struct MockCustomerData {
         private static string CsvString {

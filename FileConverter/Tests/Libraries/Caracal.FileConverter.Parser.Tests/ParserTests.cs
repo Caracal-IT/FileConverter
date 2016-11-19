@@ -66,5 +66,12 @@ namespace Caracal.FileConverter.Parser.Tests {
             Equal("Row2Col1", t.Rows[1][0]);
             Equal("Row2Col2", t.Rows[1][1]);
         }
+
+        [Fact]
+        public void ParseWithMultipleHeaderAndRowsAndEndWithEmptyRow() {
+            var t = CsvParser.Parse("Header1 , Header2\nRow1Col1, Row1Col2 \nRow2Col1,Row2Col2\n");
+                       
+            Equal(2, t.Rows.Count());            
+        }
     }
 }

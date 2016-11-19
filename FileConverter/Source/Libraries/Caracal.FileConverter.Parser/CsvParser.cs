@@ -18,7 +18,7 @@ namespace Caracal.FileConverter.Parser {
 
             bool hasContent() => csvText?.Length > 0 && lines != null && lines.Count() > 0;
             void ParseHeader() => ParseRowIntoList(lines.First(), table.Headers); 
-            void ParseRows() => lines.Skip(1).ToList().ForEach(i => ParseRowIntoList(i, table.CreateRow()));
+            void ParseRows() => lines.Skip(1).Where(r => !string.IsNullOrEmpty(r)).ToList().ForEach(i => ParseRowIntoList(i, table.CreateRow()));
                 
             void ParseRowIntoList(string row, IList<string> list){
                 Regex.Split(row, ",")
