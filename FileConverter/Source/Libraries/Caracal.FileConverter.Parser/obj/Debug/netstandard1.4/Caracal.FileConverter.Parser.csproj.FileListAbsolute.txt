@@ -1,6 +1,0 @@
-C:\Users\ettiene.m\Source\Repos\FileConverter\FileConverter\Source\Libraries\Caracal.FileConverter.Parser\bin\Debug\netstandard1.4\Caracal.FileConverter.Parser.dll
-C:\Users\ettiene.m\Source\Repos\FileConverter\FileConverter\Source\Libraries\Caracal.FileConverter.Parser\bin\Debug\netstandard1.4\Caracal.FileConverter.Parser.pdb
-C:\Users\ettiene.m\Source\Repos\FileConverter\FileConverter\Source\Libraries\Caracal.FileConverter.Parser\obj\Debug\netstandard1.4\Caracal.FileConverter.Parser.AssemblyInfo.cs
-C:\Users\ettiene.m\Source\Repos\FileConverter\FileConverter\Source\Libraries\Caracal.FileConverter.Parser\obj\Debug\netstandard1.4\Caracal.FileConverter.Parser.dll
-C:\Users\ettiene.m\Source\Repos\FileConverter\FileConverter\Source\Libraries\Caracal.FileConverter.Parser\obj\Debug\netstandard1.4\Caracal.FileConverter.Parser.pdb
-C:\Users\ettiene.m\Source\Repos\FileConverter\FileConverter\Source\Libraries\Caracal.FileConverter.Parser\obj\Debug\netstandard1.4\Caracal.FileConverter.Parser.csprojResolveAssemblyReference.cache

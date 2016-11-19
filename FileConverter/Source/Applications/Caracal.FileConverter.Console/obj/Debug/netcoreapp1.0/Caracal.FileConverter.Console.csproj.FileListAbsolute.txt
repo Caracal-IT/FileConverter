@@ -1,6 +1,0 @@
-C:\Users\ettiene.m\Source\Repos\FileConverter\FileConverter\Source\Applications\Caracal.FileConverter.Console\bin\Debug\netcoreapp1.0\Caracal.FileConverter.Console.dll
-C:\Users\ettiene.m\Source\Repos\FileConverter\FileConverter\Source\Applications\Caracal.FileConverter.Console\bin\Debug\netcoreapp1.0\Caracal.FileConverter.Console.pdb
-C:\Users\ettiene.m\Source\Repos\FileConverter\FileConverter\Source\Applications\Caracal.FileConverter.Console\obj\Debug\netcoreapp1.0\Caracal.FileConverter.Console.AssemblyInfo.cs
-C:\Users\ettiene.m\Source\Repos\FileConverter\FileConverter\Source\Applications\Caracal.FileConverter.Console\obj\Debug\netcoreapp1.0\Caracal.FileConverter.Console.dll
-C:\Users\ettiene.m\Source\Repos\FileConverter\FileConverter\Source\Applications\Caracal.FileConverter.Console\obj\Debug\netcoreapp1.0\Caracal.FileConverter.Console.pdb
-C:\Users\ettiene.m\Source\Repos\FileConverter\FileConverter\Source\Applications\Caracal.FileConverter.Console\obj\Debug\netcoreapp1.0\Caracal.FileConverter.Console.csprojResolveAssemblyReference.cache
