@@ -3,7 +3,7 @@ using Xunit;
 
 using static Xunit.Assert;
 
-namespace Caracal.FileConverter.CsvParser.Tests {
+namespace Caracal.FileConverter.Parser.Tests {
     public class ParserTests {
         [Fact]
         public void ParseNull() {
@@ -65,6 +65,6 @@ namespace Caracal.FileConverter.CsvParser.Tests {
 
             Equal("Row2Col1", t.Rows[1][0]);
             Equal("Row2Col2", t.Rows[1][1]);
-        }        
+        }
     }
 }

@@ -2,11 +2,12 @@
 using System.Linq;
 using System.Text.RegularExpressions;
 
-namespace Caracal.FileConverter.CsvParser {
+namespace Caracal.FileConverter.Parser {
     public class CsvParser {
         public static DataTable Parse(string csvText) {
             var table = new DataTable();
-            var lines = csvText?.Split('\n');
+            var lines = csvText?.Split('\n')
+                                .ToList();
 
             if (hasContent()) {
                 ParseHeader();
@@ -16,17 +17,9 @@ namespace Caracal.FileConverter.CsvParser {
             return table;
 
             bool hasContent() => csvText?.Length > 0 && lines != null && lines.Count() > 0;
-
-            void ParseHeader() => ParseRowIntoList(lines[0], table.Headers);                
-
-            void ParseRows() {
-                for (int i = 1; i < lines.Length; i++) {
-                    var row = new List<string>();
-                    ParseRowIntoList(lines[i], row);
-                    table.Rows.Add(row);                
-                }
-            }
-
+            void ParseHeader() => ParseRowIntoList(lines.First(), table.Headers); 
+            void ParseRows() => lines.Skip(1).ToList().ForEach(i => ParseRowIntoList(i, table.CreateRow()));
+                
             void ParseRowIntoList(string row, IList<string> list){
                 Regex.Split(row, ",")
                      .Select(h => h.Trim())
