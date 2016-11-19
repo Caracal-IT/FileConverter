@@ -19,19 +19,7 @@ namespace Caracal.FileConverter.Parser.Tests {
         public void GerRowColumnByName() {
             Equal("Row 2 - Col 2", table.Rows[1]["Header 2"]);
         }
-
-        [Fact]
-        public void RowsWithRowColumnAndCount() {
-            table.Rows[2]["Header 2"] = "Row 2 - Col 2";            
-            var rowCounts = table.Rows
-                                 .GroupBy(r => r["Header 2"])
-                                 .Select(r => new { Col = r.Key, Count = r.Count() })
-                                 .ToList();
-
-            Equal("Row 2 - Col 2", rowCounts[1].Col);
-            Equal(2, rowCounts[1].Count);
-        }
-
+        
         [Fact]
         public void OrderByCol() {
             table.Rows[1]["Header 2"] = "Row 2 - ACol 2";
